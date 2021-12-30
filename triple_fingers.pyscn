@@ -27,6 +27,9 @@ def Gripper(parentNode=None):
            pullPointLocation=[3, 10.5, 31.5])
 
     GripperController(gripper, fingers=[f1,f2,f3])
+    
+    CollisionMesh(eobject,
+         surfaceMeshFileName="data/mesh/finger2/finger2.stl", name="part0")
 
     return gripper
 

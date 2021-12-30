@@ -34,8 +34,10 @@ def Finger(parentNode=None, name="Finger",
                          cableGeometry=loadPointListFromFile("data/mesh/cable2.json"))
    
     FingerController(finger, cable)
-   
     
+    CollisionMesh(eobject,
+         surfaceMeshFileName="data/mesh/finger2/finger2.stl", name="part0")
+   
 
 def createScene(rootNode):
     # -*- coding: utf-8 -*-

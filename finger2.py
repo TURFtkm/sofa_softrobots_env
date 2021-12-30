@@ -48,6 +48,11 @@ def Finger(parentNode=None, name="Finger",
                  cableGeometry=loadPointListFromFile("data/mesh/cable2.json"));
 
     FingerController(eobject.node, cable)
+    
+    CollisionMesh(eobject.node, name="CollisionMesh",
+                 surfaceMeshFileName="data/mesh/finger2/finger2.stl",
+                 rotation=rotation, translation=translation,
+                 )
 
     return finger
 
